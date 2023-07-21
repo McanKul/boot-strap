@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container mt-5">
+		<div class="dropdown mt-5">
+			<button type="button" class="btn dropdown-toggle bg-danger" data-bs-toggle="dropdown"> click for dropdown	
+			</button>
+			<ul class="dropdown-menu">
+				<i class="fa fa-home">xd</i>
+				<li class="dropdown-header">.Dropdown-header clasi ile başlık atabilirsin iteme gerek yok</li>
+				<li class="dropdown-item">çay( bunda link yok)</li>
+				<li class="dropdown-item"><a href=#>kahve(bunda dropdown-item li'de) (link gibi fözükür bu yüzden a tag e koymaııyız)</a></li>
+				<li><a href=# class="dropdown-item">çay ama açık (bunda dropdown-item a tagde)</a></li>
+				<li><p class="dropdown-divider"></p></li>
+				<hr>
+				<li class="dropdown-item"> dropdown-divisorla çizgi koyabilirsin hr tagi ile aynı<li>
+				<li><a class="dropdown-item" href="#">Normal</a></li>
+				<li><a class="dropdown-item active" href="#">.Active</a></li>
+				<li><a class="dropdown-item disabled" href="#">.Disabled</a></li>
+				
+			</ul>
+		</div>
+		
+		<div class="dropdown mt-5">
+			<button type="button" class="btn dropdown-toggle bg-primary" data-bs-toggle="dropdown">.dropend class</button>
+			<ul class="dropdown-menu">
+				<li><h1 class="dropdown-header"> also you can use<br> you must put first div which contain dropdown class</h1></li>
+				<li><a class="dropdown-item" href=#>dropdown</a></li>
+				<li><a class="dropdown-item" href=#>dropstart(with dropdown class)</a></li>
+				<li><a class="dropdown-item" href=#>dropup(without dropdown class)</a></li>
+			</ul>
+		</div>
+		
+		<div class="dropdown mt-5">
+			<button type="button" class=" btn dropdown-toggle bg-primary" data-bs-toggle="dropdown">if button is large as this button use .dropdown-menu-end tag ehich contain dropdown-menu</button>
+			<ul class="dropdown-menu dropdown-menu-end">
+				<li><h1 class="dropdown-header"> also you can use<br> you must put first div which contain dropdown class</h1></li>
+				<li><a class="dropdown-item" href=#>dropup</a></li>
+				<li><a class="dropdown-item" href=#>dropstart</a></li>
+				<li><a class="dropdown-item" href=#>dropdown</a></li>
+			</ul>
+		</div>
+		
+		<div class="dropdown mt-5"></div>
+			<button class="btn dropdown-toggle btn-warning" type="button" data-bs-toggle="dropdown">deneme</button>
+			<ul class="dropdown-menu">
+				<li><a href=# class="dropdown-item"> çay</a></li>
+				<li><a href=# class="dropdown-item">kahve</a></li>
+				<li><a href=# class="dropdown-item">sarı kulo</a></li>
+				<li><a href=# class="dropdown-item-text">dropdown-item-text clası ( a tagi içinde)</a></li>
+				<li><span class="dropdown-item-text">dropdown-item-text clası(normal tag içinde)</span></li>
+			</ul>
+		</div>
+		<div class="btn-group">
+			<button type="button" class="btn btn-primary">Apple</button>
+			<button type="button" class="btn btn-primary">Samsung</button>
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Sony</button>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="#">yatay olması için btn-group yeterli</a></li>
+					<li><a class="dropdown-item" href="#">istersen bunu btn-group-vertical clası ile dikey yapabilirsin</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		
+	</div>
+</body>
+</html>
+

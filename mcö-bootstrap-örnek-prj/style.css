@@ -1,0 +1,355 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    margin: 0;
+    padding:0;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: rgb(236, 225, 209);
+}
+/**    header başlangıç **/
+.header {
+    background-color: rgb(42, 42, 177);
+  
+}
+.header .baslık {
+    margin-top: 4rem;
+    border-top-left-radius: 3rem;
+    padding: 0 3rem;
+    border-top-right-radius: 3rem;
+}   
+
+.header .baslık .navbar .ayrac {
+    font-size: 2rem;
+    color:rgba(255, 255, 255, 0.499);
+    margin-bottom: 0.6rem;
+    margin-right: 0.3rem;
+}
+ 
+.header .baslık .navbar .navbar-nav .nav-item  a {
+    font-size: 1.2rem;
+    color: aliceblue;
+
+}
+.header .baslık .navbar .navbar-nav .nav-item b {
+    font-size: 1.4rem;
+    color: aliceblue;
+    cursor: pointer;
+
+}
+
+.header .baslık .navbar .navbar-nav a i{
+    font-size: 1.5rem;
+    color: aliceblue;
+
+}
+
+.header .baslık .navbar .search-bar{
+    
+    border-top-left-radius: 0.9rem;
+    border-top-right-radius: 0.9rem;
+    border-bottom-right-radius: 0.9rem;
+    border-bottom-left-radius: 0.9rem;
+    height: 3.5rem;
+    width: 12.5rem;
+
+    background-color: rgba(202, 219, 255);
+    
+}
+
+.header .baslık .navbar .btn-search{
+    background-color: rgb(202, 219, 255);
+    
+    height: 3.5rem;
+    width: 4.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.9rem;
+    
+}
+.header .baslık .ana-baslık {
+    font-size: 2.5rem;
+    color:cadetblue;
+    text-align: center;
+    margin-top:1rem;
+}
+
+.header .baslık .alt-baslık {
+    font-size: 2.2rem;
+    color:rgb(20, 222, 229);
+    text-align: center;
+}
+
+/**    header bitiş **/
+
+/** bağlantılrr kısmı başlangıç **/
+div .list-group{
+    border-bottom-right-radius: 2rem;
+}
+div .list-group .liste-baslik .animasyonlu-icon{
+    font-size: 3rem;
+    transform:rotate(-45deg);
+    transition: 1s;
+}
+
+div .list-group .liste-baslik{
+    color:aliceblue;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.list-group:hover .liste-baslik .animasyonlu-icon{
+    font-size: 3rem;
+    transform:rotate(-90deg);
+}
+
+.list-group .my-list-group-item i{
+    color:aliceblue;
+    font-size: 1.8rem;
+    
+}
+.list-group .my-list-group-item p{
+    padding-left: 1rem;
+    color:aliceblue;
+    font-size: 1.5rem;
+}
+.list-group .my-list-group-item{
+    background-color: rgb(12,202,240);
+}
+.list-group .my-list-group-item:hover{
+    background-color: rgb(15, 149, 149);
+}
+/** bağlantılar kısım bitiş **/
+
+
+/** slayt başlangıç kısmı **/
+.slide .carousel-inner .carousel-item .slayt-item{
+    width:100%;
+}   
+.slide .carousel-inner .carousel-item:hover a div {
+    background-color: rgba(41, 39, 39, 0.397);
+    font-size: 1.5rem;
+    color:rgb(238, 255, 249);
+    display: block;
+}
+
+.slide .carousel-inner .carousel-item a div {
+    display:none;
+}
+/** bitiş kısmı **/
+
+/** haberler duyurular işlemler kısmı**/
+
+
+div .list-group .listeler-baslik .animasyonlu-icon{
+    font-size: 4rem;
+
+    transition: 1s;
+}
+
+div .list-group .listeler-baslik{
+    color:aliceblue;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom-right-radius: 2rem;
+}
+.list-group:hover .listeler-baslik .animasyonlu-icon{
+    transform:rotate(-45deg);
+}
+
+.list-group .list-group-item .my-web-icon:before{
+    content: "";
+    width: 1.2rem;
+    height: 1.3rem;
+    overflow: hidden;
+    background-position: 0rem 0%;
+    background: url(resimler/list_arrow1.png) no-repeat;
+    display: inline-block;
+    margin-right: 1rem;
+
+    margin-top: 0.6rem;
+    
+    transition: all 0.4s ease;
+    
+}
+.list-group .list-group-item:hover .my-web-icon:before{
+    background-position: 0 100%;
+}
+.list-group .list-group-item .my-web-icon2:before{
+    content: "";
+    width: 1.2rem;
+    height: 1.3rem;
+    overflow: hidden;
+    background-position: 0rem 0%;
+    background: url(resimler/list_arrow2.png) no-repeat;
+    display: inline-block;
+    margin-right: 1rem;
+
+    margin-top: 0.6rem;
+    
+    transition: all 0.4s ease;
+    
+}
+.list-group .list-group-item:hover .my-web-icon2:before{
+    background-position: 0 100%;
+}
+
+.list-group .list-group-item .my-web-icon,.my-web-icon2{
+font-size: 1.6rem;
+font-weight:600;
+color: rgba(70, 68, 68, 0.494);
+}
+.list-group .my-list-group-item3{
+font-size: 1.6rem;
+font-weight:600;
+color: rgba(70, 68, 68, 0.494);
+}
+.list-group .my-list-group-item3:hover{
+    color: rgb(25, 228, 89);
+}
+
+.list-group .list-group-item:hover .my-web-icon{
+    color: rgba(255, 0, 0, 0.784);
+}
+.list-group .list-group-item:hover .my-web-icon2{
+    color:rgba(229, 147, 32, 0.825);
+}
+    
+.list-group .list-group-item .list-group-btn {
+width:max-content;
+
+font-size: 2rem;
+padding:1rem 2rem;
+background-color: rgb(219, 43, 43);
+border-top-right-radius: 3rem;
+border-bottom-right-radius: 3rem;
+color: aliceblue;
+border:rgb(219, 43, 43);
+}
+
+
+.list-group .list-group-item .islemler-icon1,.islemler-icon2,.islemler-icon3,.islemler-icon4,.islemler-icon5{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: block;
+    overflow: hidden;
+    background-position: 0rem 0%;
+    margin-right: 1rem;
+    margin-top: 0.6rem;
+    transition: all 0.4s ease;
+} 
+.list-group .list-group-item .islemler-icon1{
+background: url(resimler/mebbis.png) no-repeat;
+}
+.list-group .list-group-item .islemler-icon2{
+    background: url(resimler/eokul.png) no-repeat;
+}
+.list-group .list-group-item .islemler-icon3{
+    background: url(resimler/vbs.png) no-repeat;
+}
+.list-group .list-group-item .islemler-icon4{
+    background: url(resimler/okulweb.png) no-repeat;
+}
+.list-group .list-group-item .islemler-icon5{
+    background: url(resimler/bilgiedinme.png) no-repeat;
+}
+.list-group .list-group-item:hover .islemler-icon1{
+    background-position:0rem 100%;
+}
+
+.list-group .list-group-item:hover .islemler-icon2{
+    background-position:0rem 100%;
+}
+
+.list-group .list-group-item:hover .islemler-icon3{
+    background-position:0rem 100%;
+}
+
+.list-group .list-group-item:hover .islemler-icon4{
+    background-position:0rem 100%;
+}
+
+.list-group .list-group-item:hover .islemler-icon5{
+    background-position:0rem 100%;
+}
+
+/** haberler duyurular işlemler kısmı bitiş**/
+/** istatikler İletişim kurumumuz başlangıç başlangıç**/
+.islemler-list .col-9,.col-3{
+    color: rgb(46, 46, 255);
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+.islemler-baslik{
+    font-size: 2.5rem;
+    color: rgb(30, 30, 229);
+    height: min-content;
+}
+.islemler-group-btn{
+    width:max-content;
+    margin-top:auto;
+    margin-bottom:0;
+    font-size: 2rem;
+    padding:1rem 2rem;
+    background-color: rgb(43, 105, 219);
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    color: aliceblue;
+    border:rgb(43, 105, 219);
+}
+
+
+.col-lg-4 .resimler div {
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+}
+
+.col-lg-4 .resimler div a {
+    max-width: 46%;
+    max-height: 50%;
+    margin: 2%;
+}
+.col-lg-4 .resimler div a img {
+    width: 100%;
+    height: 100%;
+    padding: 0 0;
+    object-fit: cover;
+    border: 0.3rem solid gray;
+    
+    
+}
+/* footer başlabgıç*/
+.my-footer {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(65, 63, 63);
+    padding: 2rem 1rem;
+}
+
+   
+/**  responsive kısım başlangıç **/
+@media screen and (max-width:991px){
+    .header .baslık .navbar .ayrac {
+       display:none;
+    }
+    .header .baslık .navbar .search-bar{
+     display: none; 
+    }
+    
+    .header .baslık .navbar .btn-search{
+       display:none;
+    }
+
+
+}
+
+
+    
+
+/**  responsive kısım bitiş **/

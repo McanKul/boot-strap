@@ -1,0 +1,182 @@
+<html lang="en">
+<head>
+	<title>bootstrap</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>	
+</head>
+<body>
+<div class="container">
+	<ul class="nav bg-warning">
+		<li class="nav-item ">
+		<a class="nav-link">
+		çay
+		</a>
+		</li>
+		<li class="nav-item">
+		<a  href=# class="nav-link">
+		kahve
+		</a>
+		</li>
+		<li class="nav-item">
+		<a  href=# class="nav-link">
+		çay ama açık
+		</a>
+		</li>
+		<li class="nav-item">
+		<a  href=# class="nav-link disabled">
+		disabled
+		</a>
+		</li>
+	</ul>
+	<p>ul içine nav clası li ler içine nav-item linkler içine nav-link a taginin içinde disabled yapabilirsin</p>
+	
+	<ul class="nav bg-dark justify-content-center">
+		<li class="nav-item ">
+		<a class="nav-link">
+		çay
+		</a>
+		</li>
+		<li class="nav-item">
+		<a  href=# class="nav-link">
+		kahve
+		</a>
+		</li>
+		<li class="nav-item">
+		<a  href=# class="nav-link">
+		çay ama açık
+		</a>
+		</li>
+	</ul>
+	<p> justify-content-center ve justify-content-end clası ile yerini ayarlayabiliriz</p>
+	
+		<ul class="nav bg-dark flex-column">
+		<li class="nav-item ">
+		<a class="nav-link">
+		çay
+		</a>
+		</li>
+		<li class="nav-item">
+		<a  href=# class="nav-link">
+		kahve
+		</a>
+		</li>
+		<li class="nav-item">
+		<a  href=# class="nav-link">
+		çay ama açık
+		</a>
+		</li>
+	</ul>
+	<p>dikey nav bar için flex-column clasını kullanıyoruz</p>
+	
+		<ul class="nav nav-tabs">
+		<li class="nav-item ">
+		<a class="nav-link active">
+		çay
+		</a>
+		</li>
+		<li class="nav-item">
+		<a  href=# class="nav-link">
+		kahve
+		</a>
+		</li>
+		<li class="nav-item">
+		<a  href=# class="nav-link">
+		çay ama açık
+		</a>
+		</li>
+	</ul>
+
+	<p> ul tagi içerisine nav-tabs koyarak bu şekilde sekme gibi gösterebilirsin</p>
+	
+	<ul class="nav nav-pills">
+		<li class="nav-item ">
+		<a href=# class="nav-link active">
+		çay
+		</a>
+		</li>
+		<li class="nav-item">
+		<a  href=# class="nav-link">
+		kahve
+		</a>
+		</li>
+		<li class="nav-item">
+		<a  href=# class="nav-link">
+		çay ama açık
+		</a>
+		</li>
+	</ul>
+	<p>burada nav-pills kullandım (Turn the nav menu into navigation pills with the)</p>
+	
+	<ul class="nav nav-pills nav-justified">
+		<li class="nav-item ">
+		<a href=# class="nav-link active">
+		çay
+		</a>
+		</li>
+		<li class="nav-item">
+		<a  href=# class="nav-link">
+		kahve
+		</a>
+		</li>
+		<li class="nav-item">
+		<a  href=# class="nav-link">
+		çay ama açık
+		</a>
+		</li>
+	</ul>
+	<p>nav-justified clası ile nav itemlerin botutlarını eşitliyoruz</p>
+	
+	<ul class="nav nav-pills nav-justified">
+		<li class="nav-item ">
+		<a href=# class="nav-link">
+		çay
+		</a>
+		</li>
+		<li class="nav-item dropdown">
+		<a  href=# class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">
+		kahve
+		</a>
+			<ul class="dropdown-menu">
+				<li><a href=# class="dropdown-item">latte</a></li>
+				<li><a href=# class="dropdown-item">mocha</a></li>
+				<li><a href=# class="dropdown-item">americano</a></li>
+				</ul>
+		</li>
+		<li class="nav-item">
+		<a  href=# class="nav-link">
+		çay ama açık
+		</a>
+		</li>
+	</ul>
+	
+	<ul class="nav nav-tabs nav-justified mb-5" role="tab-list">
+		<li class="nav-item">
+		<a href="#home" class="nav-link active" data-bs-toggle="tab">
+		home
+		</a>
+		</li>
+		<li class="nav-item">
+		<a  href="#menu1" class="nav-link" data-bs-toggle="tab">
+		menu1
+		</a>
+		</li>
+		<li class="nav-item">
+		<a  href="#menu2" class="nav-link" data-bs-toggle="tab">
+		menu2
+		</a>
+		</li>
+	</ul>
+	
+	<div class="tab-content mb-5">
+		<div id="home" class="container tab-pane active">bunu yapmak için navclası olan ul'ye nav-tabs clasını da ekliyoruz ve role="tab-list" diyoruz.
+		bundan sonra nav-link klaslı a taglere href veya data-bs-targetla id gösteriyoruz ve bunlara data-bs-toggle="tab" diyoruz bununla menu kurlumu tamam</div>
+		<div id="menu1" class="container tab-pane">açılan kapanan kısım için bir div açıyoruz idsi tab-content olan. sonra bu div içine artık kaç tane seçenek varsa
+		bur da 3 vardı o yüzden 3 div daha açtık bunların id lerini girdikten sonra tab-pane clasını ekliyoruz bu kadar</div>
+		<div id="menu2" class="container tab-pane">bunu tab-pills için yapmak istiyorsan tab-paane ve tab-content aynı kalıyor
+		tab-listte aynı sadece nav-pills koyman yeterli ve toggleraı pill yapman gerekiyor </div>
+	</div>
+</div>
+</body>
+</html>

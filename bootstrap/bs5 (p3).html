@@ -1,0 +1,412 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bootstrap</title>
+<meta charset="utf-8">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<!-- Control the column width, and how they should appear on different devices -->
+<div class="row">
+  <div class="col bg-primary">col</div>
+  <div class="col bg-dark">col2</div>
+</div>
+<div class="row">
+  <div class="col-md bg-primary">col21</div>
+  <div class="col-md bg-dark">col22</div>
+  <div class="col-md bg-primary">col23</div>
+</div>
+
+<!-- Or let Bootstrap automatically handle the layout -->
+<div class="row">
+  <div class="col-sm-3 bg-dark">anans</div>
+  <div class="col-sm-1 bg-primary">babanas</div>
+  <div class="col-sm-1 bg-dark">kavanas</div>
+    <div class="col-sm-1 bg-primary">col21</div>
+  <div class="col-sm-1 bg-dark">col22</div>
+    <div class="col-sm-1 bg-primary">col21</div>
+  <div class="col-sm-1 bg-dark">col22</div>
+    <div class="col-sm-1 bg-primary">col21</div>
+  <div class="col-sm-1 bg-dark">col22</div>
+  <!-- buradaki sm lg gibi ifadeler yine ekranda kaç piksel olduğuna göre 
+  değişmesini sağlarken ondan sonraki sayılar kolumun genişliğini belirtiyor 
+  12 ye kadar gidebilir-->
+</div>
+<div class="container-fluid border">
+htmldeki headerler bootstrapte class olarak yazabiliriz 
+
+<div class="h1"> bu h1 class</div>
+
+<div class="h5">bu h5 class</div>
+Display headings are used to stand out more than 
+<br>normal headings (larger font-size and lighter font-weight)
+<div class="display-1"> bu display 1 </div>
+<div class="display-6">bu display 6</div>
+</div>
+
+<div class="container mt-3">
+  <h1>Highlight Text</h1>    
+  <p>Use the mark element (or the .mark class) to <mark>highlight</mark> text.</p>
+</div>
+
+ <p>The small element (and the .small class) is used to create a smaller, secondary text in any heading:</p>       
+  <h1>h1 heading <small>secondary text</small></h1>
+  
+  <div class="container mt-3">
+  <h1>Abbreviations</h1>
+  <p>The abbr element is used to mark up an abbreviation or acronym:</p>
+  <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+</div>
+
+<div class="container mt-3">
+  <h1>Blockquotes</h1>
+  <p>The blockquote element is used to present content from another source:</p>
+  <blockquote class="blockquote">
+    <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+    <footer class="blockquote-footer">From WWF's website</footer>
+  </blockquote>
+</div>
+
+<div class="container mt-3">
+  <h1>Description Lists</h1>    
+  <p>The dl element indicates a description list:(recall from html)</p>
+  <dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>     
+</div>
+
+<div class="container mt-3">
+  <h1>Code Snippets</h1>
+  <p>Inline snippets of code should be embedded in the code element:</p>
+  <p>The following HTML elements: <code>span</code>, <code>section</code>, and <code>div</code> defines a section in a document.</p>
+</div>
+
+
+<div class="container mt-3">
+  <h1>Keyboard Inputs</h1>
+  <p>To indicate input that is typically entered via the keyboard, use the kbd element:</p>
+  <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+</div>
+
+<div class="container mt-3">
+  <h2>Typography</h2>
+  <p>Use the .lead class to make a paragraph "stand out":</p>
+  <p class="lead">This paragraph stands out.</p>
+  <p>This is a regular paragraph.</p>
+</div>
+
+<div class="container mt-3">
+  <h2>Typography</h2>
+  <p class="text-start">Left-aligned text.</p>
+  <p class="text-end">Right-aligned text.</p>      
+  <p class="text-center">Center-aligned text.</p>
+  <p class="text-nowrap">No wrap text. No wrap text. No wrap text. No wrap text.</p>
+</div>
+
+
+<div class="container mt-3">
+  <h2>Text break / Word break</h2>
+  <p>The .text-break class prevents long text from breaking layout.</p>
+  <p>With .text-break: ekranı büyütük küçültmeye <br>göre sayfa sonunda alt satıra geçmeyi sağlar</p>
+  <p class="text-break">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+  <p>Without .text-break:</p>
+  <p>AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+</div>
+
+
+<div class="container mt-3">
+  <h2>Text Decoration</h2>
+  <p>Use the .text-decoration-none class to remove the underline from a link.</p>
+  <a href="https://github.com/itu-itis22-kul21" class="text-decoration-none">my github (link without underline)</a>
+</div>
+
+<div class="container mt-3">
+  <h2>Typography</h2>
+  çok fazla kullanmazsın yıazım yanlışlarının önüne geçmek için iyi
+  <p class="text-lowercase">Lowercased text.</p>
+  <p class="text-uppercase">Uppercased text.</p>      
+  <p class="text-capitalize">Capitalized text.</p>
+</div>
+
+
+<div class="container mt-3">
+  <h2>Typography</h2>
+  
+  biraz daha küçük yazıyr abbr yi çokta önemli deil.
+  <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948. (normal abbr)</p>      
+  <p>The <abbr title="World Health Organization" class="initialism">WHO</abbr> was founded in 1948. (slightly smaller abbr)</p>
+</div>
+
+<div class="container mt-3">
+  <h2>Typography</h2>
+  <p>The class .list-unstyled removes the default list-style and left margin on list items (immediate children only):</p>
+  <ul class="list-unstyled">
+    <li>Coffee</li>
+    <li>Tea
+      <ul>
+        <li>Black tea</li>
+        <li>Green tea</li>
+      </ul>
+    </li>
+    <li>Milk</li>
+  </ul>
+</div>
+
+<div class="container mt-3">
+  <h2>Typography</h2>
+  <p>The class .list-inline places all list items on a single line, when used together with the .list-inline-item:</p>
+  <br> burada list-inline dedikten sonra elemanların kılasına list-inline item demeyi unutma önemli bir detay 
+  <ul class="list-inline">
+    <li class="list-inline-item">Coffee</li>
+    <li class="list-inline-item">Tea</li>
+    <li class="list-inline-item">Milk</li>
+  </ul>
+</div>
+<div class="container mt-3">
+  <h2>Contextual Colors</h2>
+  <p>Use the contextual classes to provide "meaning through colors":</p>
+  <p class="text-muted">This text is muted.</p>
+  <p class="text-primary">This text is important.(primary)</p>
+  <p class="text-success">This text indicates success.</p>
+  <p class="text-info">This text represents some information(info).</p>
+  <p class="text-warning">This text represents a warning.</p>
+  <p class="text-danger">This text represents danger.</p>
+  <p class="text-secondary">Secondary text.</p>
+  <p class="text-dark">This text is dark grey(dark).</p>
+  <p class="text-body">Default <mark>body </mark>color (often black).</p>
+  <p class="text-light">This text is <mark>light </mark> grey (on white background).</p>
+  <p class="text-white bg-dark">This text is white (on black background).</p>
+  sadece bayaz ve siyah yazıya saydamlık verebiliriz "text-black veya white-50" ama sadece %50 verebiliyoruz<br> sanırım bunun yerine iinline css yazılabilir
+</div>
+
+<div class="container mt-3">
+  <h2>Contextual Backgrounds</h2>
+  <p>Use the contextual background classes to provide "meaning through colors".</p>
+  <div class="bg-primary p-2"> bu arada anlamadım ama padding max 5 ondan sonra sanırım yok ya da iç içe girio </div>
+  <div class="bg-success p-2"></div>
+  <div class="bg-info p-3"></div>
+  <div class="bg-warning p-4"></div>
+  <div class="bg-danger p-5"></div>
+  <div class="bg-secondary p-5"></div>
+  <div class="bg-dark p-2"></div>
+  <div class="bg-light p-4"></div>
+  <div class="bg-white p-4"> burada beyaz var </div>
+  text-bg-renkismi bu yapıyı kullanırsak arka plana uygun renkte yazı olacaktır.
+</div>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bootstrap</title>
+<meta charset="utf-8">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<!-- Control the column width, and how they should appear on different devices -->
+<div class="row">
+  <div class="col bg-primary">col</div>
+  <div class="col bg-dark">col2</div>
+</div>
+<div class="row">
+  <div class="col-md bg-primary">col21</div>
+  <div class="col-md bg-dark">col22</div>
+  <div class="col-md bg-primary">col23</div>
+</div>
+
+<!-- Or let Bootstrap automatically handle the layout -->
+<div class="row">
+  <div class="col-sm-3 bg-dark">anans</div>
+  <div class="col-sm-1 bg-primary">babanas</div>
+  <div class="col-sm-1 bg-dark">kavanas</div>
+    <div class="col-sm-1 bg-primary">col21</div>
+  <div class="col-sm-1 bg-dark">col22</div>
+    <div class="col-sm-1 bg-primary">col21</div>
+  <div class="col-sm-1 bg-dark">col22</div>
+    <div class="col-sm-1 bg-primary">col21</div>
+  <div class="col-sm-1 bg-dark">col22</div>
+  <!-- buradaki sm lg gibi ifadeler yine ekranda kaç piksel olduğuna göre 
+  değişmesini sağlarken ondan sonraki sayılar kolumun genişliğini belirtiyor 
+  12 ye kadar gidebilir-->
+</div>
+<div class="container-fluid border">
+htmldeki headerler bootstrapte class olarak yazabiliriz 
+
+<div class="h1"> bu h1 class</div>
+
+<div class="h5">bu h5 class</div>
+Display headings are used to stand out more than 
+<br>normal headings (larger font-size and lighter font-weight)
+<div class="display-1"> bu display 1 </div>
+<div class="display-6">bu display 6</div>
+</div>
+
+<div class="container mt-3">
+  <h1>Highlight Text</h1>    
+  <p>Use the mark element (or the .mark class) to <mark>highlight</mark> text.</p>
+</div>
+
+ <p>The small element (and the .small class) is used to create a smaller, secondary text in any heading:</p>       
+  <h1>h1 heading <small>secondary text</small></h1>
+  
+  <div class="container mt-3">
+  <h1>Abbreviations</h1>
+  <p>The abbr element is used to mark up an abbreviation or acronym:</p>
+  <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+</div>
+
+<div class="container mt-3">
+  <h1>Blockquotes</h1>
+  <p>The blockquote element is used to present content from another source:</p>
+  <blockquote class="blockquote">
+    <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+    <footer class="blockquote-footer">From WWF's website</footer>
+  </blockquote>
+</div>
+
+<div class="container mt-3">
+  <h1>Description Lists</h1>    
+  <p>The dl element indicates a description list:(recall from html)</p>
+  <dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>     
+</div>
+
+<div class="container mt-3">
+  <h1>Code Snippets</h1>
+  <p>Inline snippets of code should be embedded in the code element:</p>
+  <p>The following HTML elements: <code>span</code>, <code>section</code>, and <code>div</code> defines a section in a document.</p>
+</div>
+
+
+<div class="container mt-3">
+  <h1>Keyboard Inputs</h1>
+  <p>To indicate input that is typically entered via the keyboard, use the kbd element:</p>
+  <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+</div>
+
+<div class="container mt-3">
+  <h2>Typography</h2>
+  <p>Use the .lead class to make a paragraph "stand out":</p>
+  <p class="lead">This paragraph stands out.</p>
+  <p>This is a regular paragraph.</p>
+</div>
+
+<div class="container mt-3">
+  <h2>Typography</h2>
+  <p class="text-start">Left-aligned text.</p>
+  <p class="text-end">Right-aligned text.</p>      
+  <p class="text-center">Center-aligned text.</p>
+  <p class="text-nowrap">No wrap text. No wrap text. No wrap text. No wrap text.</p>
+</div>
+
+
+<div class="container mt-3">
+  <h2>Text break / Word break</h2>
+  <p>The .text-break class prevents long text from breaking layout.</p>
+  <p>With .text-break: ekranı büyütük küçültmeye <br>göre sayfa sonunda alt satıra geçmeyi sağlar</p>
+  <p class="text-break">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+  <p>Without .text-break:</p>
+  <p>AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+</div>
+
+
+<div class="container mt-3">
+  <h2>Text Decoration</h2>
+  <p>Use the .text-decoration-none class to remove the underline from a link.</p>
+  <a href="https://github.com/itu-itis22-kul21" class="text-decoration-none">my github (link without underline)</a>
+</div>
+
+<div class="container mt-3">
+  <h2>Typography</h2>
+  çok fazla kullanmazsın yıazım yanlışlarının önüne geçmek için iyi
+  <p class="text-lowercase">Lowercased text.</p>
+  <p class="text-uppercase">Uppercased text.</p>      
+  <p class="text-capitalize">Capitalized text.</p>
+</div>
+
+
+<div class="container mt-3">
+  <h2>Typography</h2>
+  
+  biraz daha küçük yazıyr abbr yi çokta önemli deil.
+  <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948. (normal abbr)</p>      
+  <p>The <abbr title="World Health Organization" class="initialism">WHO</abbr> was founded in 1948. (slightly smaller abbr)</p>
+</div>
+
+<div class="container mt-3">
+  <h2>Typography</h2>
+  <p>The class .list-unstyled removes the default list-style and left margin on list items (immediate children only):</p>
+  <ul class="list-unstyled">
+    <li>Coffee</li>
+    <li>Tea
+      <ul>
+        <li>Black tea</li>
+        <li>Green tea</li>
+      </ul>
+    </li>
+    <li>Milk</li>
+  </ul>
+</div>
+
+<div class="container mt-3">
+  <h2>Typography</h2>
+  <p>The class .list-inline places all list items on a single line, when used together with the .list-inline-item:</p>
+  <br> burada list-inline dedikten sonra elemanların kılasına list-inline item demeyi unutma önemli bir detay 
+  <ul class="list-inline">
+    <li class="list-inline-item">Coffee</li>
+    <li class="list-inline-item">Tea</li>
+    <li class="list-inline-item">Milk</li>
+  </ul>
+</div>
+<div class="container mt-3">
+  <h2>Contextual Colors</h2>
+  <p>Use the contextual classes to provide "meaning through colors":</p>
+  <p class="text-muted">This text is muted.</p>
+  <p class="text-primary">This text is important.(primary)</p>
+  <p class="text-success">This text indicates success.</p>
+  <p class="text-info">This text represents some information(info).</p>
+  <p class="text-warning">This text represents a warning.</p>
+  <p class="text-danger">This text represents danger.</p>
+  <p class="text-secondary">Secondary text.</p>
+  <p class="text-dark">This text is dark grey(dark).</p>
+  <p class="text-body">Default <mark>body </mark>color (often black).</p>
+  <p class="text-light">This text is <mark>light </mark> grey (on white background).</p>
+  <p class="text-white bg-dark">This text is white (on black background).</p>
+  sadece bayaz ve siyah yazıya saydamlık verebiliriz "text-black veya white-50" ama sadece %50 verebiliyoruz<br> sanırım bunun yerine iinline css yazılabilir
+</div>
+
+<div class="container mt-3">
+  <h2>Contextual Backgrounds</h2>
+  <p>Use the contextual background classes to provide "meaning through colors".</p>
+  <div class="bg-primary p-2"> bu arada anlamadım ama padding max 5 ondan sonra sanırım yok ya da iç içe girio </div>
+  <div class="bg-success p-2"></div>
+  <div class="bg-info p-3"></div>
+  <div class="bg-warning p-4"></div>
+  <div class="bg-danger p-5"></div>
+  <div class="bg-secondary p-5"></div>
+  <div class="bg-dark p-2"></div>
+  <div class="bg-light p-4"></div>
+  <div class="bg-white p-4"> burada beyaz var </div>
+  text-bg-renkismi bu yapıyı kullanırsak arka plana uygun renkte yazı olacaktır.
+</div>
+>>>>>>> 6019aeaf65c3de8858cd4ce2f70bb22f028a9e66
+</body>
